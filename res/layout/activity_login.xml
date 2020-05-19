@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@drawable/gradient_background"
+    >
+    <ImageView
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_marginTop="70sp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/database_icon"
+        />
+
+    <ImageView
+        android:id="@+id/circle1"
+        android:layout_width="194dp"
+        android:layout_height="187dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-80dp"
+        android:layout_marginRight="-100dp"
+        android:src="@drawable/circletransparent" />
+
+    <ImageView
+        android:id="@+id/circle2"
+        android:layout_width="174dp"
+        android:layout_height="154dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-100dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/circletransparent" />
+
+    <ImageView
+        android:id="@+id/circle3"
+        android:layout_width="182dp"
+        android:layout_height="182dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="-80dp"
+        android:layout_marginBottom="-30dp"
+        android:src="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/circle4"
+        android:layout_width="134dp"
+        android:layout_height="134dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="-50dp"
+        android:layout_marginBottom="-50dp"
+        android:layout_toLeftOf="@+id/circle3"
+        android:src="@drawable/circletransparent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="350sp"
+            android:layout_height="70sp"
+            android:orientation="vertical"
+            android:background="@drawable/rectangle_white"
+            android:layout_marginTop="30sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp">
+
+
+            <EditText
+
+                android:id="@+id/mail"
+                android:layout_width="300sp"
+                android:layout_height="60sp"
+                android:background="@drawable/edit_round"
+                android:layout_marginTop="220sp"
+                android:hint="@string/e_mail"
+                android:drawableStart="@drawable/ic_person_black_24dp"
+                android:autofillHints="30sp"
+                android:textColorHint="#252E2D"
+                android:padding="10sp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:textSize="25sp"
+                android:inputType="textEmailAddress"
+                android:drawableLeft="@drawable/ic_person_black_24dp" />
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="300sp"
+                android:layout_height="60sp"
+                android:background="@drawable/edit_round"
+                android:layout_marginTop="15sp"
+                android:hint="@string/password"
+                android:drawableStart="@drawable/ic_vpn_key_black_24dp"
+                android:textColorHint="#252E2D"
+                android:padding="10sp"
+                android:textSize="25sp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:inputType="textPassword"
+                android:autofillHints="@string/password"
+                android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+                />
+
+            <CheckBox
+                android:id="@+id/remember_me_checkbox"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:buttonTint="#611A18"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:text="Remember me" />
+
+            <Button
+                android:id="@+id/signup"
+                android:layout_width="300sp"
+                android:layout_height="60sp"
+                android:background="@drawable/button_round"
+                android:text="@string/sign_in"
+                android:textSize="25sp"
+                android:textColor="#4E3E41"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:textAllCaps="false"
+                android:layout_marginTop="15sp"
+                />
+
+            <TextView
+                android:id="@+id/warn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30sp"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textColor="#FF0000" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginTop="30sp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="#611A18"
+                />
+
+            <TextView
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="-15sp"
+                android:layout_marginBottom="30sp"
+                android:layout_marginEnd="30dp"
+                android:gravity="center|bottom"
+                android:text="@string/create_an_account"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

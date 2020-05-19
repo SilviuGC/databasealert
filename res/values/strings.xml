@@ -1,0 +1,32 @@
+<resources>
+    <string name="e_mail">E-mail</string>
+    <string name="sign_in">Sign in</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="connect_to_database">Connect to database</string>
+    <string name="database_name">Database name</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="host">Host</string>
+    <string name="port">Port</string>
+    <string name="connect">Connect</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">E-mail</string>
+    <string name="passw">Password</string>
+    <string name="signin">Sign in</string>
+    <string name="databasealert">DatabaseAlert</string>
+    <string name="alert" />
+    <string name="confirm_password">Confirm Password</string>
+    <string name="set_parameters">Set parameters </string>
+    <string name="visualize_graph">Visualize graph</string>
+    <string name="visualize_data">Visualize data</string>
+    <string name="or">OR</string>
+    <string name="actual_parameters">Actual parameters</string>
+    <string name="column">Column:</string>
+    <string name="value">Value:</string>
+    <string name="logout">Logout</string>
+    <string name="set">Set</string>
+    <string name="da">DA</string>
+    <string name="sign_up">Sign up</string>
+    <string name="title">Title</string>
+</resources>
