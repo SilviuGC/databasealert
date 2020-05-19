@@ -144,4 +144,15 @@
         android:textSize="20sp"
         tools:ignore="LabelFor" />
 
+    <TextView
+        android:id="@+id/warn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/log_out"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30sp"
+        android:textAlignment="center"
+        android:textColor="#FF0000" />
+
 </RelativeLayout>

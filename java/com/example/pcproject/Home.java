@@ -27,7 +27,7 @@ public class Home extends AppCompatActivity {
     Button button,button2,button3;
 
     int notification_id_counter, group_notification_id, constant_value;
-    String name, pulse, names_n_pulses;
+    String name, pulse, names_n_pulses, aux_name="", aux_pulse="";
     boolean value_alert;
 
     public static final String EXTRA_TEXT = "com.example.pcproject.Home.EXTRA_TEXT";
@@ -92,7 +92,12 @@ public class Home extends AppCompatActivity {
                     if (Integer.parseInt(dataSnapshot1.child("puls").getValue().toString().trim()) > constant_value) {
                         name = dataSnapshot1.child("nume").getValue().toString().trim();
                         pulse = dataSnapshot1.child("puls").getValue().toString().trim();
-                        popNotification(name,pulse);
+
+                        if(name.equals(aux_name) == false && pulse.equals(aux_pulse) == false || name.equals(aux_name) && pulse.equals(aux_pulse) == false) {
+                            popNotification(name, pulse);
+                            aux_name = name;
+                            aux_pulse = pulse;
+                        }
 
                         if(names_n_pulses == null)
                             names_n_pulses = "\nName: " + name + "\nPulse: " + pulse + "\n";

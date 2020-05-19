@@ -89,8 +89,7 @@ public class Grafv extends AppCompatActivity implements OnChartValueSelectedList
                                 int low = 50;
                                 int high = 121;
                                 int result = r.nextInt(high-low) + low;
-                                String ns = String.valueOf(result);
-                                ds.child("puls").getRef().setValue(ns);
+                                ds.child("puls").getRef().setValue(String.valueOf(result).trim());
                             }
 
                             @Override
